@@ -52,16 +52,19 @@
           <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10" v-if="chosenLesson != null">
             <div class="card">
               <div class="card-header">
-                {{ data[chosenCategory][chosenLesson].title }}
+                {{ data[chosenCategory][chosenLesson].title }}&nbsp;{{ data[chosenCategory][chosenLesson].time }}
                 <button v-if="!data[chosenCategory][chosenLesson].done"
-                  class="btn btn-outline-secondary float-right"
+                  class="btn btn-outline-secondary float-right lm"
                   @click="toggleDone(true)">
                   Megjelölés készként
                 </button>
                 <button v-else
-                  class="btn btn-outline-secondary float-right"
+                  class="btn btn-outline-secondary float-right lm"
                   @click="toggleDone(false)">
                   Megjelölés eltávolítása
+                </button>
+                <button class="btn btn-outline-success float-right" @click="open(data[chosenCategory][chosenLesson]['help'])">
+                  <i class="far fa-question-circle"></i>&nbsp;Tananyag
                 </button>
               </div>
               <div class="card-body">
@@ -75,9 +78,6 @@
                   <ul>
                     <li v-for="question in data[chosenCategory][chosenLesson]['questions']">{{ question }}</li>
                   </ul>
-                  <button class="btn btn-outline-success" @click="open(data[chosenCategory][chosenLesson]['help'])">
-                    <i class="far fa-question-circle"></i>&nbsp;Segítség
-                  </button>
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@
 
         <hr>
 
-        <div class="row">
+        <div class="row bottom-row">
           <div class="col">
             <div class="text-center">
               <button class="btn btn-outline-secondary" @click="openImage()">
@@ -106,7 +106,7 @@
               <button class="btn btn-outline-secondary lm" @click="openVideo()">
                 <i class="fab fa-youtube text-danger"></i>&nbsp;&nbsp;Videó
               </button>
-              <button class="btn btn-outline-secondary lm" @click="open('https://github.com/')">
+              <button class="btn btn-outline-secondary lm" @click="open('https://github.com/w3munkafuzet/w3munkafuzet.github.io')">
                 <i class="fab fa-github-square text-success"></i>&nbsp;&nbsp;Ha esetleg megnéznéd a kódot...
               </button>
             </div>
@@ -122,6 +122,10 @@
             </p>
             <hr>
             <iframe src="https://www.youtube.com/embed/arj7oStGLkU" width="420" height="315"></iframe>
+            <p>
+              Nagyon szeretem ezt a videót, időnként megnézem, a közepén picit
+              már-már bugyuta, de nagyon szép íve van, szerintem nagyon motiváló.
+            </p>
           </div>
         </div>
         <div class="content-container" v-if="imageUp">
