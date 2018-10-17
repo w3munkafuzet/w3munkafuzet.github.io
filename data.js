@@ -11,7 +11,7 @@ var initialData = {
         "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
         "Az elkészített html-ben próbáld ki a w3schools-on lévő példákat.",
         "Bármilyen banálisnak tűnő információt, kérdést írj le!",
-        "Mikor visszatérsz, ez alapján fogod nekem elmesélni, mit kell ezekről tudni.",
+        "Mikor visszatérsz, ez alapján tudod elmesélni, mit tudsz ezekről.",
         "(Tényleg mindent írj le, azt is ami \"egyértelmű\" - nem érteni kell, hanem tudni)."
       ],
       "help": "https://www.w3schools.com/html/html_paragraphs.asp", "notes": ""
@@ -30,7 +30,7 @@ var initialData = {
         "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
         "Az elkészített html-ben próbáld ki a w3schools-on lévő példákat.",
         "Írd le, mit kell tudni, az <a> tag-ről, illetve a fent említett attribute-okról.",
-        "Mikor visszatérsz, ez alapján fogod elmondani, hogy mit kell tudni például a \"href=\"-ről.",
+        "Mikor visszatérsz, ez alapján tudod elmesélni, mit tudsz például a \"href=\"-ről.",
         "Ha valami nem világos, nem baj, sőt... Írd le akkor a kérdést."
       ],
       "help": "https://www.w3schools.com/html/html_links.asp", "notes": ""
@@ -49,7 +49,7 @@ var initialData = {
         "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
         "Az elkészített html-ben próbáld ki a w3schools-on lévő példákat.",
         "Írd le, mit kell tudni, az <img> tag-ről, illetve a fent említett attribute-okról.",
-        "Mikor visszatérsz, ez alapján fogod elmondani, hogy mit kell tudni például a \"alt=\"-ról.",
+        "Mikor visszatérsz, ez alapján tudod elmesélni, hogy mit tudsz például a \"alt=\"-ról.",
         "Itt is igaz - ha olvasva egyértelműnek is tűnik... írd le.",
         "Ezeket még tudni kell, nem érteni."
       ],
@@ -72,8 +72,8 @@ var initialData = {
         "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
         "Készíts egy style.css file-t és használd fel a html-ben.",
         "(Puskázhatsz közösen csinált anyagokból is, hogy kell.)",
-        "Mikor visszatérsz, a jegyzeteid alapján mondod majd el, mit tudsz e fenti témákról.",
-        "(Nem kell \"bemagolni\", épp ezért jegyzeteled le - majd idővel meg is marad.)"
+        "Mikor visszatérsz, ezek alapján tudod elmesélni, mit tudsz a fenti témákról.",
+        "(Határozottan nem kell \"bemagolni\", épp ezért jegyzeteled le - majd idővel meg is marad.)"
       ],
       "help": "https://www.w3schools.com/css/css_text.asp", "notes": ""
     },
@@ -92,8 +92,8 @@ var initialData = {
         "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
         "Készíts egy style.css file-t és használd fel a html-ben.",
         "(Puskázhatsz közösen csinált anyagokból is, hogy kell.)",
-        "Mikor visszatérsz, a jegyzeteid alapján mondod majd el, mit tudsz e fenti témákról.",
-        "(Nem kell \"bemagolni\", épp ezért jegyzeteled le - majd idővel meg is marad.)"
+        "Mikor visszatérsz, ezek alapján tudod elmesélni, mit tudsz a fenti témákról.",
+        "(Határozottan nem kell \"bemagolni\", épp ezért jegyzeteled le - majd idővel meg is marad.)"
       ],
       "help": "https://www.w3schools.com/css/css_background.asp", "notes": ""
     },
