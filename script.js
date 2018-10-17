@@ -56,6 +56,10 @@ var app = new Vue({
     getRandomImage() {
       var image = this.images[Math.floor(Math.random()*this.images.length)];
       return image;
+    },
+    toggleDone: function(to) {
+      this.data[this.chosenCategory][this.chosenLesson].done = to;
+      this.update();
     }
   },
   created() {

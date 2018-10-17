@@ -53,6 +53,16 @@
             <div class="card">
               <div class="card-header">
                 {{ data[chosenCategory][chosenLesson].title }}
+                <button v-if="!data[chosenCategory][chosenLesson].done"
+                  class="btn btn-outline-secondary float-right"
+                  @click="toggleDone(true)">
+                  Megjelölés készként
+                </button>
+                <button v-else
+                  class="btn btn-outline-secondary float-right"
+                  @click="toggleDone(false)">
+                  Megjelölés eltávolítása
+                </button>
               </div>
               <div class="card-body">
                 <p class="card-text">
