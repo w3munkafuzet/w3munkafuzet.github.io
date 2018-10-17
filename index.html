@@ -41,7 +41,7 @@
       </nav>
 
       <div class="container">
-        <div class="row">
+        <div class="row" v-if="chosenCategory != 'Javascript'">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
             <button class="btn btn-block btn-outline-success"
               v-for="(lesson, index) in data[chosenCategory]" @click="chosenLesson = index">
@@ -95,31 +95,13 @@
           </div>
         </div>
 
-        <hr>
-
-        <div class="row bottom-row">
+        <div class="row" v-else>
           <div class="col">
-            <div class="text-center">
-              <button class="btn btn-outline-secondary" @click="openImage()">
-                <i class="fas fa-shuttle-van blue-icon"></i>&nbsp;&nbsp;Motiváció
-              </button>
-              <button class="btn btn-outline-secondary lm" @click="open('https://github.com/w3munkafuzet/w3munkafuzet.github.io')">
-                <i class="fab fa-github-square text-success"></i>&nbsp;&nbsp;Ha esetleg megnéznéd a kódot...
-              </button>
-            </div>
+            <p class="text-center">Nemsokára...</p>
+            <img class="my-image" src="vanlife.jpg" alt="vanlife.jpg">
           </div>
         </div>
       </div>
-
-      <div id="fixed-container" v-if="videoUp || imageUp">
-        <div class="content-container" v-if="imageUp">
-          <p>Egy kis motiváció&nbsp;<i class="far fa-smile"></i>
-            <button class="close-button" @click="closeImage()">x</button>
-          </p>
-          <img class="img-thumbnail img-responsive" :src="getRandomImage()" alt="">
-        </div>
-      </div>
-      <div id="fixed-container-background" v-if="videoUp || imageUp"></div>
     </div>
 
     <script type="text/javascript" src="data.js"></script>
