@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Munkafüzet</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Charmonman|K2D"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <div id="app">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand"><i class="fas fa-book"></i>&nbsp;Munkafüzet</span>
+        <div class="form-inline">
+          <button class="btn btn-danger my-2 my-sm-0" @click="setCategory('HTML')">
+            HTML&nbsp;<i class="fab fa-html5"></i>
+          </button>
+          <button class="btn btn-primary my-2 my-sm-0 lm" @click="setCategory('CSS')">
+            CSS&nbsp;<i class="fab fa-css3-alt"></i>
+          </button>
+          <button class="btn btn-warning my-2 my-sm-0 lm" @click="setCategory('Javascript')">
+            Javascript&nbsp;<i class="fab fa-js-square"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+            <button class="btn btn-block btn-outline-success"
+              v-for="(lesson, index) in data[chosenCategory]" @click="chosenLesson = index">
+              {{ lesson.title }}&nbsp;<i v-if="lesson.done" class="far fa-check-circle"></i>
+            </button>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10" v-if="chosenLesson != null">
+            <div class="card">
+              <div class="card-header">
+                {{ data[chosenCategory][chosenLesson].title }}
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <ul>
+                    <li v-for="theme in data[chosenCategory][chosenLesson]['themes']">{{ theme }}</li>
+                  </ul>
+                </p>
+                <hr>
+                <p class="card-text">
+                  <ul>
+                    <li v-for="question in data[chosenCategory][chosenLesson]['questions']">{{ question }}</li>
+                  </ul>
+                  <button class="btn btn-outline-success" @click="open(data[chosenCategory][chosenLesson]['help'])">
+                    <i class="far fa-question-circle"></i>&nbsp;Segítség
+                  </button>
+                </p>
+              </div>
+            </div>
+            <textarea class="form-control" placeholder="Jegyzet" rows="8" v-on:keyup="update()"
+              v-model="data[chosenCategory][chosenLesson]['notes']">
+            </textarea>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10" v-else>
+            <div class="text-center help">
+              <div class="large-icon">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <p>Válassz egy feladatot</p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <button class="btn btn-outline-secondary" @click="openImage()">
+                <i class="fas fa-shuttle-van blue-icon"></i>&nbsp;&nbsp;Motiváció
+              </button>
+              <button class="btn btn-outline-secondary lm" @click="openVideo()">
+                <i class="fab fa-youtube text-danger"></i>&nbsp;&nbsp;Videó
+              </button>
+              <button class="btn btn-outline-secondary lm" @click="open('https://github.com/')">
+                <i class="fab fa-github-square text-success"></i>&nbsp;&nbsp;Ha esetleg megnéznéd a kódot...
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fixed-container" v-if="videoUp || imageUp">
+        <div class="content-container" v-if="videoUp">
+          <div class="video-container">
+            <p>Ha halogatnád az elkezdését...&nbsp;<i class="far fa-smile"></i>
+              <button class="close-button" @click="closeVideo()">x</button>
+            </p>
+            <hr>
+            <iframe src="https://www.youtube.com/embed/arj7oStGLkU" width="420" height="315"></iframe>
+          </div>
+        </div>
+        <div class="content-container" v-if="imageUp">
+          <p>Egy kis motiváció&nbsp;<i class="far fa-smile"></i>
+            <button class="close-button" @click="closeImage()">x</button>
+          </p>
+          <img class="img-thumbnail img-responsive" :src="getRandomImage()" alt="">
+        </div>
+      </div>
+      <div id="fixed-container-background" v-if="videoUp || imageUp"></div>
+    </div>
+
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

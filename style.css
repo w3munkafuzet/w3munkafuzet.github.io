@@ -1,0 +1,75 @@
+body {
+  font-family: 'K2D', sans-serif;
+}
+
+textarea {
+  font-family: 'Charmonman', cursive;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.lm {
+  margin-left: 7px;
+}
+
+.help {
+  opacity: 0.5;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.large-icon {
+  font-size: 5rem;
+}
+
+@keyframes flyin {
+  0% { top: 0; opacity: 0; }
+  100% { top: 10vh; opacity: 1; }
+}
+
+#fixed-container {
+  position: fixed;
+  z-index: 101;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  box-shadow: 0 0 5px silver;
+  padding: 70px;
+  animation: flyin 0.4s ease forwards;
+  color: silver;
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 0.75; }
+}
+
+#fixed-container-background {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  animation: appear 0.4s ease forwards;
+}
+
+.close-button {
+  float: right;
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: silver;
+}
+
+.blue-icon {
+  color: aqua ;
+}
