@@ -169,7 +169,7 @@ var initialData = {
       ],
       "questions": [
         "Akkor csináld, mikor a HTML-en belül a \"Division\" című fejezet már kész.",
-        "Használd azt a html, és ott a Div-eket próbáld egymástól megfelelő távolságra helyezni.",
+        "Használd azt a html-t, és ott a Div-eket próbáld egymástól megfelelő távolságra helyezni.",
         "Ezen egyszer már átfutottunk, de attól még jegyzeteld ki és csináld végig szépen : )",
         "(Ne csak a margint! Használd a paddingot és a bordert is, még ha picit erőltetett is)"
       ],
