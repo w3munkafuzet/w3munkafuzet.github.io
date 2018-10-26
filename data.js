@@ -54,8 +54,67 @@ var initialData = {
         "Ezeket még tudni kell, nem érteni."
       ],
       "help": "https://www.w3schools.com/html/html_images.asp", "notes": ""
-    }
+    },
     // --- Image ---
+
+    // --- Input ---
+    {
+      "title": "Input", "done": false, "time": "(20-30 perc)",
+      "themes": [
+        "Tags: <input>",
+        "Attributes: type="
+      ],
+      "questions": [
+        "Készíts egy külön mappát a terminálon keresztül \"input\" névvel! (cd, ls, mkdir, touch, pwd...)",
+        "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
+        "Az elkészített html-ben próbáld ki a w3schools-on lévő példákat.",
+        "Írd le, milyen value-kat kaphat a \"type=\" attribute.",
+        "Mikor visszatérsz, ez alapján tudod elmesélni, hogy mit tudsz például a \"type=date\"-ről.",
+        "Sok attribute lesz, ami nem feltétlen lesz egyértelmű (name=, value=) - nem baj!",
+        "A <form> tag szintén újdonság lehet, azzal se kell sokat játszani - elég az input.",
+        "A type-okat próbáld ki, lehetőleg az összeset, ha valami nem világos, írd le a kérdést."
+      ],
+      "help": "https://www.w3schools.com/html/html_form_input_types.asp", "notes": ""
+    },
+    // --- Input ---
+
+    // --- Button ---
+    {
+      "title": "Button", "done": false, "time": "(5 perc)",
+      "themes": [
+        "Tags: <button>",
+        "Attributes: -"
+      ],
+      "questions": [
+        "Készíts egy külön mappát a terminálon keresztül \"button\" névvel! (cd, ls, mkdir, touch, pwd...)",
+        "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
+        "Az elkészített html-ben készíts egy buttont, amiben szöveg van, illetve egyet amiben kép.",
+        "Ha valami nem világos, írd le a kérdést!!"
+      ],
+      "help": "https://www.w3schools.com/tags/tag_button.asp", "notes": ""
+    },
+    // --- Button ---
+
+    // --- Division ---
+    {
+      "title": "Division", "done": false, "time": "(30 perc)",
+      "themes": [
+        "Tags: <div>, <span>",
+        "Attributes: class=, id=, style="
+      ],
+      "questions": [
+        "Készíts egy külön mappát a terminálon keresztül \"division\" névvel! (cd, ls, mkdir, touch, pwd...)",
+        "A mappában csinálj egy index.html file-t, és nyisd meg atom-ban és a chrome-ban.",
+        "Készíts egy css file-t is, és linkeld be a html-",
+        "Írj verseket file-ba, de ne használj se <p>, se <br>, se <h1>... tag-eket.",
+        "Csak <div> és <span> tag-eket, ezeket pedig formázd a css-ben.",
+        "Leírja az oldal, mire jók, de szerintem elsőre nem teljesen egyértelmű.",
+        "Próbáld meg a saját szavaiddal megfogalmazni, majd megbeszéljük, ha van kérdés írd fel."
+      ],
+      "help": "https://www.w3schools.com/html/html_blocks.asp", "notes": ""
+    }
+    // --- Division ---
+    
   ],
   "CSS": [
     // --- Text ---
