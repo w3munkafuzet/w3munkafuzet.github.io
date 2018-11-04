@@ -206,8 +206,26 @@ var initialData = {
         "Írd le, hogy mi jött át - ez picit komplexebb, majd megbeszéljük : )"
       ],
       "help": "https://www.w3schools.com/css/css_positioning.asp", "notes": ""
-    }
+    },
     // --- Position ---
+    
+    // --- Display ---
+    {
+      "title": "Display", "done": false, "time": "(15-20 perc)",
+      "themes": [
+        "display - none, block, inline, inline-block"
+      ],
+      "questions": [
+        "Ez hasonlóan fontos még a CSS-en belül, mint a Position volt",
+        "Csinálj külön mappát neki, bele html-t és css-t.",
+        "Elég kipróbálni azt a 4-et amit írtam.",
+        "Csinálj néhány <div>-et, és ezekn próbáld ki : )",
+        "Játsz ezekkel is hasonlóan mint a Position-nel csináltad.",
+        "Írd le, hogy mi jött át - ezt is majd megbeszéljük : )"
+      ],
+      "help": "https://www.w3schools.com/cssref/pr_class_display.asp", "notes": ""
+    }
+    // --- Display ---
   ],
   "Javascript": [
     // TODO
