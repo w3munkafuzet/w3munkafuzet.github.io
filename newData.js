@@ -219,7 +219,8 @@ var initialData = {
         "Ez hasonlóan fontos még a CSS-en belül, mint a Position volt",
         "Csinálj külön mappát neki, bele html-t és css-t.",
         "Elég kipróbálni azt a 4-et amit írtam.",
-        "Csinálj néhány <div>-et, és ezekn próbáld ki : )",
+        "Csinálj néhány <div>-et, és ezeket próbáld ki : )",
+        "Csinálj egy fajtából többet is egymás mellé, úgy lesz érdekesebb.",
         "Játsz ezekkel is hasonlóan mint a Position-nel csináltad.",
         "Írd le, hogy mi jött át - ezt is majd megbeszéljük : )"
       ],
