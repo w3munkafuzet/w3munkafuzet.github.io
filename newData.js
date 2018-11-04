@@ -221,7 +221,7 @@ var initialData = {
         "Elég kipróbálni azt a 4-et amit írtam.",
         "Csinálj néhány <div>-et, és ezeket próbáld ki : )",
         "Csinálj egy fajtából többet is egymás mellé, úgy lesz érdekesebb.",
-        "Játsz ezekkel is hasonlóan mint a Position-nel csináltad.",
+        "Játssz ezekkel is hasonlóan mint a Position-nel csináltad.",
         "Írd le, hogy mi jött át - ezt is majd megbeszéljük : )"
       ],
       "help": "https://www.w3schools.com/cssref/pr_class_display.asp", "notes": ""
