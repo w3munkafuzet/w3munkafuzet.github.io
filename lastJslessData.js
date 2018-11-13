@@ -145,7 +145,7 @@ var initialData = {
         "A mappában csinálj egy index.html, egy style.css és egy script.js file-t, és nyisd meg atom-ban.",
         "Írd bele a script.js-be: console.log('valami');",
         "Kösd össze a script.js-t az index.html-lel.",
-        "A böngészőben job klikk, vizsgálat, majd console, ha kiírta, hogy valami, akkor kész is vagy : )"
+        "A böngészőben jobb klikk, vizsgálat, majd console, ha kiírta, hogy valami, akkor kész is vagy : )"
       ],
       "help": "https://www.w3schools.com/tags/tag_script.asp", "notes": ""
     }
