@@ -214,7 +214,7 @@ var initialData = {
 
     // --- Float ---
     {
-      "title": "Margin", "done": false, "time": "(5 perc)",
+      "title": "Float", "done": false, "time": "(5 perc)",
       "themes": [
         "float"
       ],
